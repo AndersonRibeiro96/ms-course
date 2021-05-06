@@ -9,15 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hrpay-roll" />
         <module name="hr-work" />
+        <module name="hr-eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hr-eureka-server" target="11" />
       <module name="hr-work" target="11" />
       <module name="hrpay-roll" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hr-eureka-server" options="-parameters" />
       <module name="hr-work" options="-parameters" />
       <module name="hrpay-roll" options="-parameters" />
     </option>
